@@ -1,5 +1,3 @@
----
-
 # Sentiment Analysis Web Application
 
 This Sentiment Analysis Web Application leverages Python and Natural Language Processing (NLP) techniques to analyze the sentiment of tweets. Using a trained model, the application can classify tweets as positive, negative, or neutral. This project includes a Streamlit web application for an interactive user experience.
