@@ -1,12 +1,12 @@
-This is a Sentimental  Analysis project using Python and Natural Language Processing techniques.
+---
 
-Activate the virtual env: venv\Scripts\activate
+# Sentiment Analysis Web Application
 
-Dup tthe model : python src/train_model.py
+This Sentiment Analysis Web Application leverages Python and Natural Language Processing (NLP) techniques to analyze the sentiment of tweets. Using a trained model, the application can classify tweets as positive, negative, or neutral. This project includes a Streamlit web application for an interactive user experience.
 
+## Project Structure
 
-Here is the project structure.
-
+```
 sentiment-analysis-webapp/
 │
 ├── app/                        # Directory for the Streamlit webapp
@@ -18,8 +18,8 @@ sentiment-analysis-webapp/
 │   └── test.csv                # Testing dataset
 │
 ├── models/                     # Directory for saved model files
-│   ├──sentiment_model.pkl      # Serialized model to be used by the app
-│   |──tfidf_vectorizer.pkl     # Tfidf_vectorizer model to be used by the app
+│   ├── sentiment_model.pkl     # Serialized model to be used by the app
+│   └── tfidf_vectorizer.pkl    # Tfidf_vectorizer model to be used by the app
 │
 ├── notebooks/                  # Jupyter notebooks for exploration and presentations
 │   └── model_development.ipynb # Notebook for model training and evaluation
@@ -37,3 +37,67 @@ sentiment-analysis-webapp/
 ├── LICENSE                     # License for the project
 ├── README.md                   # Project overview, setup, and usage instructions
 └── requirements.txt            # List of dependencies to be installed
+```
+
+## Setup and Installation
+
+1. **Clone the repository**
+
+   ```sh
+   git clone https://github.com/saimaharana4/sentiment-analysis-webapp.git
+   cd sentiment-analysis-webapp
+   ```
+
+2. **Create and activate a virtual environment**
+
+   - For Windows:
+
+     ```sh
+     python -m venv venv
+     venv\Scripts\activate
+     ```
+
+   - For macOS/Linux:
+
+     ```sh
+     python3 -m venv venv
+     source venv/bin/activate
+     ```
+
+3. **Install dependencies**
+
+   ```sh
+   pip install -r requirements.txt
+   ```
+
+4. **Train the model**
+
+   Navigate to the project root directory and run:
+
+   ```sh
+   python src/train_model.py
+   ```
+
+   This will train the sentiment analysis model and save it, along with the TF-IDF vectorizer, in the `models/` directory.
+
+5. **Run the Streamlit Web Application**
+
+   ```sh
+   streamlit run app/streamlit_app.py
+   ```
+
+   This command will start the Streamlit server and open the web application in your default browser.
+
+## Usage
+
+Once the Streamlit web application is running, you can analyze the sentiment of tweets by entering the text of the tweet into the input field and clicking the "Predict Sentiment" button. The application will display the sentiment classification based on the input text.
+
+Activate the virtual env: venv\Scripts\activate
+
+Dump the model : python src/train_model.py
+
+Run the streamlt web application: streamlit run app\streamlit_app.py
+
+---
+
+
