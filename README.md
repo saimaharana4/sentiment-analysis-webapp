@@ -90,11 +90,6 @@ sentiment-analysis-webapp/
 
 Once the Streamlit web application is running, you can analyze the sentiment of tweets by entering the text of the tweet into the input field and clicking the "Predict Sentiment" button. The application will display the sentiment classification based on the input text.
 
-Activate the virtual env: venv\Scripts\activate
-
-Dump the model : python src/train_model.py
-
-Run the streamlt web application: streamlit run app\streamlit_app.py
 
 ---
 
