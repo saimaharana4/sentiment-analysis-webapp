@@ -2,6 +2,9 @@ This is a Sentimental  Analysis project using Python and Natural Language Proces
 
 Activate the virtual env: venv\Scripts\activate
 
+Dup tthe model : python src/train_model.py
+
+
 Here is the project structure.
 
 sentiment-analysis-webapp/
@@ -15,7 +18,8 @@ sentiment-analysis-webapp/
 │   └── test.csv                # Testing dataset
 │
 ├── models/                     # Directory for saved model files
-│   └── sentiment_model.pkl     # Serialized model to be used by the app
+│   ├──sentiment_model.pkl      # Serialized model to be used by the app
+│   |──tfidf_vectorizer.pkl     # Tfidf_vectorizer model to be used by the app
 │
 ├── notebooks/                  # Jupyter notebooks for exploration and presentations
 │   └── model_development.ipynb # Notebook for model training and evaluation
