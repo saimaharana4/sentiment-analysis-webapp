@@ -81,6 +81,7 @@ sentiment-analysis-webapp/
 5. **Run the Streamlit Web Application**
 
    ```sh
+   SET PYTHONPATH=%PYTHONPATH%;D:\sentiment-analysis-webapp
    streamlit run app/streamlit_app.py
    ```
 
