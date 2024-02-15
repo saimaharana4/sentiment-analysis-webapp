@@ -8,10 +8,10 @@ train_df, test_df = load_and_preprocess_data(r"data\train.csv", r"data\test.csv"
 vectorizer = TfidfVectorizer(max_features=1000)
 X_train_vectors = vectorizer.fit_transform(train_df['cleaned_text'])
 
-model = LogisticRegression()
+model = LogisticRegression(C = 1.0, penalty = 'l1', solver= 'liblinear')
 model.fit(X_train_vectors, train_df['sentiment'])
 
-# Save the trained model to disk
+# Save the trained model to model/ location
 model_path = r'd:\sentiment-analysis-webapp\models\sentiment_model.pkl'
 vectorizer_path = r"d:\sentiment-analysis-webapp\models\tfidf_vectorizer.pkl"
 joblib.dump(model, model_path)

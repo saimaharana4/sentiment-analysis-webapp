@@ -5,18 +5,13 @@ import pandas as pd
 import joblib
 from src.data_preprocessing import preprocess_text
 
-
-
 # Add the parent directory of 'src' to sys.path to make it discoverable
 project_root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(project_root_dir)
 
-
 # Example of constructing an absolute path
 model_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'models')
 model_path = os.path.join(model_dir, 'sentiment_model.pkl')
-
-# print("Loading model from:", model_path) # to get the path stored for model
 
 # Load model and vectorizer
 model = joblib.load(r"d:\sentiment-analysis-webapp\models\sentiment_model.pkl")
