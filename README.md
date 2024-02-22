@@ -32,7 +32,6 @@ sentiment-analysis-webapp/
 │   └── test_preprocessing.py   # Test cases for data preprocessing
 │
 ├── .gitignore                  # Specifies intentionally untracked files to ignore
-├── LICENSE                     # License for the project
 ├── README.md                   # Project overview, setup, and usage instructions
 └── requirements.txt            # List of dependencies to be installed
 ```
